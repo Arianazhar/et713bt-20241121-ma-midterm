@@ -1,0 +1,56 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 8ced8f7e02e242a5b8fb94d29373cb9c.vfs.cloud9.us-east-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 8ced8f7e02e242a5b8fb94d29373cb9c.vfs.cloud9.us-east-1.amazonaws.com
+Started GET "/" for 172.56.166.220 at 2024-11-24 05:45:48 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Blog'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 60ms (Views: 10.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 172.56.166.220 at 2024-11-24 05:45:52 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 7.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | GC: 30.0ms)
+Completed 200 OK in 217ms (Views: 81.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 74.8ms)
+
+
+Started GET "/assets/turbo.min-fae85750.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Started GET "/assets/application-bfcdf840.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-8b441ae0.css" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 172.56.166.220 at 2024-11-24 05:50:02 +0000
+Cannot render console from 172.56.166.220! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-11-24 05:52:15.847251', '2024-11-24 05:52:15.847334') RETURNING "key" /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Migrating to CreateArticles (20241124055050)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241124055050') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
